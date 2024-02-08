@@ -1,0 +1,9 @@
+{
+  "Index": {
+    "title": "Bonjour le monde!"
+  },
+  "LocaleSwitcher": {
+    "label": "Langue",
+    "locale": "{ locale, select, fr {FR} en {EN} other {Unknown} }"
+  }
+}

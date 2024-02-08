@@ -1,0 +1,10 @@
+# Redirect with a 301
+[[redirects]]
+from = "/en/home-page"
+to = "/en"
+status = 301
+
+[[redirects]]
+from = "/fr/home-page"
+to = "/fr"
+status = 301

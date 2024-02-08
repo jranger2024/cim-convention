@@ -1,0 +1,82 @@
+@tailwind base;
+
+main {
+  * {
+    @apply scroll-mt-20 lg:scroll-mt-[112px];
+  }
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+*:not(.ring-0):focus,
+button:not(.ring-0):focus {
+  @apply outline-none ring-2 ring-brand-blue ring-opacity-50 ring-offset-2;
+}
+
+@tailwind components;
+
+.structured-text {
+  > * {
+    @apply mb-8 text-16 leading-6 text-brand-grey-600 lg:mb-10 lg:text-18;
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+
+  h2 {
+    @apply mb-4 text-20/[140%] font-semibold text-brand-grey-950 lg:mb-8 lg:text-32/[125%];
+  }
+
+  h3 {
+    @apply mb-4 text-20/[140%] font-medium text-brand-grey-950 lg:mb-6 lg:text-24;
+  }
+
+  ul {
+    @apply ml-4 list-disc lg:ml-8;
+  }
+
+  a {
+    @apply underline;
+  }
+}
+
+.cookiefirst-cookie-declaration {
+  @apply space-y-4 lg:space-y-8;
+}
+
+.registration-tier-details {
+  @apply text-brand-grey-600;
+
+  p {
+    @apply my-2;
+  }
+
+  ul {
+    @apply flex flex-col items-start gap-2;
+  }
+
+  li {
+    @apply relative flex items-start justify-start;
+  }
+
+  li::before {
+    content: '';
+    background-size: 75%;
+    @apply mr-[12px] mt-1 block h-4 w-4 shrink-0 bg-[url('../assets/check.svg')] bg-center bg-no-repeat lg:h-[20px] lg:w-[20px];
+  }
+}
+
+/* Splide custom pagination */
+.splide__pagination {
+  .splide__pagination__page {
+    @apply h-1 w-6 rounded-none bg-brand-grey-300 active:bg-brand-grey-950 lg:w-10;
+  }
+
+  .splide__pagination__page.is-active {
+    @apply scale-100 bg-brand-grey-950;
+  }
+}
+
+@tailwind utilities;
